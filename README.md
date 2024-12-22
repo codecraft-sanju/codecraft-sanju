@@ -1,3 +1,6 @@
+## Competitive Programming Profiles
+[![CodeChef](https://img.shields.io/badge/CodeChef-%23F5A623.svg?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/sanjuch_18)
+
 ![logo](https://github.com/codecraft-sanju/codecraft-sanju/blob/main/githubbanner.png)
 <h1 align="center">Hi 👋, I'm Sanjay choudhary</h1>
 <h3 align="center">🚀 A Passionate Full-Stack Developer from India</h3>
