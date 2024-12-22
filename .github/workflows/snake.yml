@@ -2,27 +2,27 @@ name: Generate Contribution Snake
 
 # Define the events that trigger the workflow
 on:
-  # Trigger the workflow when pushing to the main branch (or any other branch)
+  # Trigger the workflow on push to the main branch
   push:
     branches:
       - main
-  # Run every 6 hours using cron
+  # Run every 6 hours (automatic scheduling)
   schedule:
     - cron: "0 */6 * * *"
-  # Allow manual triggering of the workflow from GitHub's Actions tab
+  # Manual trigger from the Actions tab
   workflow_dispatch:
 
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on (latest Ubuntu version)
+    # Use the latest Ubuntu runner for the job
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository to work with
+      # Step 1: Checkout the repository
       - uses: actions/checkout@v2
 
-      # Step 2: Generate the contribution snake using Platane's action
+      # Step 2: Generate the contribution snake
       - uses: Platane/snk@master
         id: snake-gif
         with:
@@ -30,27 +30,27 @@ jobs:
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-      # Step 3: Debugging step to show the git status (optional)
+      # Step 3: Show git status (optional for debugging)
       - run: git status
 
-      # Step 4: Commit and push the generated GIF and SVG files to the repository
+      # Step 4: Commit and push the generated files to the repository
       - name: Push changes to repository
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main  # Ensure this is 'main' as your branch name
+          branch: main  # Ensure it pushes to the 'main' branch
           force: true
 
-      # Step 5: Deploy the generated snake files to GitHub Pages
+      # Step 5: Deploy the snake files to GitHub Pages
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output  # The branch where the snake will be deployed
           build_dir: dist         # Directory containing the generated files
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      # Step 6: Ensure the deployment is successful and print out the logs
-      - name: Check GitHub Pages deployment status
+
+      # Step 6: Confirm GitHub Pages deployment (optional)
+      - name: Verify GitHub Pages deployment
         run: |
-          echo "Deployment to GitHub Pages successful"
-          curl -I https://<your-github-username>.github.io/<repo-name>/  # Replace with your repo name
+          echo "Deployment to GitHub Pages was successful!"
+          curl -I https://<your-github-username>.github.io/<repo-name>/  # Replace with your repository's name
