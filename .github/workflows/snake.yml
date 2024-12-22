@@ -9,7 +9,7 @@ on:
   # Also trigger every 6 hours as a cron job
   schedule:
     - cron: "0 */6 * * *"
-  # Allow manual triggering of the workflow
+  # Allow manual triggering of the workflowssss
   workflow_dispatch:
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: main
           force: true
 
       # 5. Deploy the generated gif to GitHub Pages
