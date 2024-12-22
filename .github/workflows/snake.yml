@@ -37,7 +37,7 @@ jobs:
       - name: Push changes to repository
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}  # Use your Personal Access Token (PAT)
           branch: main  # Ensure it pushes to the 'main' branch
           force: true
 
@@ -47,10 +47,10 @@ jobs:
           target_branch: output  # The branch where the snake will be deployed
           build_dir: dist         # Directory containing the generated files
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       # Step 6: Confirm GitHub Pages deployment (optional)
       - name: Verify GitHub Pages deployment
         run: |
           echo "Deployment to GitHub Pages was successful!"
-          curl -I https://<your-github-username>.github.io/<repo-name>/  # Replace with your repository's name
+          curl -I https://codecraft-sanju.github.io/codecraft-sanju/  # Replace with your repository's name
