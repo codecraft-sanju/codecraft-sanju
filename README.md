@@ -40,3 +40,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codecraft-sanju&show_icons=true&locale=en" alt="codecraft-sanju" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=codecraft-sanju&" alt="codecraft-sanju" /></p>
+![Snake animation](https://github.com/codecraft-sanjay/codecraft-sanjay/blob/output/github-contribution-grid-snake.svg)
+
