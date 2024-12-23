@@ -1,5 +1,7 @@
 
 [![CodeChef](https://img.shields.io/badge/CodeChef-%23F5A623.svg?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/sanjuch_18)
+![Snake Animation](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/dist/snake.svg)
+
 
 ![logo](https://github.com/codecraft-sanju/codecraft-sanju/blob/main/githubbanner.png)
 <h1 align="center">Hi 👋, I'm Sanjay choudhary</h1>
