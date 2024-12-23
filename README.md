@@ -1,6 +1,6 @@
 
 [![CodeChef](https://img.shields.io/badge/CodeChef-%23F5A623.svg?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/sanjuch_18)
-![Snake Animation](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/dist/snake.svg)
+
 
 
 ![logo](https://github.com/codecraft-sanju/codecraft-sanju/blob/main/githubbanner.png)
@@ -42,5 +42,11 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codecraft-sanju&show_icons=true&locale=en" alt="codecraft-sanju" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=codecraft-sanju&" alt="codecraft-sanju" /></p>
+
+
+
+
+
+![Snake Animation](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/dist/snake.svg)
 
 
