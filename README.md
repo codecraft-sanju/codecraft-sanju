@@ -47,6 +47,7 @@
 
 
 
-![Snake Animation](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/dist/snake.svg)
+![GitHub Contribution Snake](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/snake.svg)
+
 
 
