@@ -47,7 +47,7 @@
 
 
 
-![GitHub Contribution Snake](https://github.com/codecraft-sanju/codecraft-sanju/blob/output/snake.svg)
+
 
 
 
