@@ -1,26 +1,26 @@
-name: Generate Snake Game
+name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Runs at midnight every day
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
-  build:
+  generate-snake:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Generate Snake Animation
         uses: Platane/snk@v2
         with:
           github_user_name: codecraft-sanju
-          outputs: dist/snake.svg
+          svg_out_path: dist/snake.svg
 
-      - name: Commit and Push Snake Animation
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          commit_message: "Updated Snake Animation"
-          file_pattern: dist/snake.svg
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output
+          force: true
