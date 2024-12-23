@@ -1,10 +1,10 @@
 name: Generate Snake Animation
 
 on:
-  workflow_dispatch: # Allows manual trigger via GitHub Actions
-  push:              # Runs when there is a new push to the repository
+  workflow_dispatch: # Allows manual trigger
+  push:              # Runs on new pushes to specified branches
     branches:
-      - main         # Adjust if your default branch is not `main`
+      - main         # Change if your default branch is not `main`
 
 jobs:
   generate:
@@ -16,17 +16,17 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: Generate the snake animation
-      - name: Generate snake animation
+      - name: Generate Snake Animation
         uses: Platane/snk@v2
         with:
-          github_user_name: codecraft-sanju
-          outputs: dist/snake.svg
+          github_user_name: codecraft-sanju # Replace with your GitHub username
+          svg_out_path: dist/snake.svg      # Specify where to output the file
 
-      # Step 3: Commit and push the snake animation
-      - name: Commit and push changes
+      # Step 3: Push the changes to the repository
+      - name: Commit and Push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add -A
+          git add dist/snake.svg
           git commit -m "Generated snake animation [skip ci]"
           git push
