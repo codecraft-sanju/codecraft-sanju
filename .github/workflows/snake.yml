@@ -12,7 +12,7 @@ jobs:
 
     steps:
       # Step 1: Check out the repository
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       # Step 2: Generate the snake animation
@@ -20,13 +20,12 @@ jobs:
         uses: Platane/snk@v2
         with:
           github_user_name: codecraft-sanju # Replace with your GitHub username
-          svg_out_path: dist/snake.svg      # Specify where to output the file
 
-      # Step 3: Push the changes to the repository
-      - name: Commit and Push
+      # Step 3: Commit and Push the changes
+      - name: Push the Snake Animation to GitHub
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add dist/snake.svg
-          git commit -m "Generated snake animation [skip ci]"
+          git add .github/contributions.svg
+          git commit -m "Updated snake animation"
           git push
