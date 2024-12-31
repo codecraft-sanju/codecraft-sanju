@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "dotenv": "16.4.5"
+  },
+  "dependencies": {
+    "@snk/github-user-contribution": "file:../github-user-contribution"
   }
 }
