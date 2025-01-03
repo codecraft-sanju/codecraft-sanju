@@ -16,10 +16,13 @@
 </picture>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/codecraft-sanju/codecraft-sanju/main/wave.svg" alt="Wave Animation" width="100%">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" fill="#4B8BBE">
+    <path fill-opacity="1" d="M0,128L30,133.3C60,139,120,149,180,144C240,139,300,117,360,106.7C420,96,480,96,540,112C600,128,660,160,720,144C780,128,840,64,900,42.7C960,21,1020,43,1080,64C1140,85,1200,107,1260,122.7C1320,139,1380,149,1410,154.7L1440,160V320H1410C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+  </svg>
 </div>
 
 ![logo](https://github.com/codecraft-sanju/codecraft-sanju/blob/main/bannergit.png)
+
 <h1 align="center">Hi 👋, I'm Sanjay Choudhary</h1>
 <h3 align="center">🚀 A Passionate Full-Stack Developer from India</h3>
 
