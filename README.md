@@ -1,4 +1,4 @@
-### 🐍 Contribution Snake
+
 
 <picture>
   <source
