@@ -1,5 +1,25 @@
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/codecraft-sanju/codecraft-sanju/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/codecraft-sanju/codecraft-sanju/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="github contribution grid snake animation"
+    src="https://raw.githubusercontent.com/codecraft-sanju/codecraft-sanju/output/github-contribution-grid-snake.svg"
+  />
+</picture>
+
+
+
+
 <h2 align="center">Hi 👋, I'm Sanjay</h2>
 <h3 align="center">Software Developer & Machine Learning Enthusiast</h3>
+
+<img align="right" alt="coding" width="400" src="https://camo.githubusercontent.com/4d9f5ecceb711eec6e2018f38a5677dc657c9738d4a65ba3b928c41c0a45b439/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966"/>
 
 <a href="https://codecraft-sanju.vercel.app"> 
  <img src="https://img.shields.io/badge/ProfileViews-1,588-navyblue" />
